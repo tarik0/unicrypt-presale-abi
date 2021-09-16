@@ -29,7 +29,9 @@ function getV3Key(walletAddr, randomNumber) {
 ```
 
 # What About The V4 ?
-In the next version of the Unicrypt presale contract they have changed the formula of how they generate the `bytes _key` argument of the `userDeposit` function and they have added a hCaptcha protection to prevent bots but since the Ethereum contracts doesn't have an HTTP API to check if the hCaptcha response token is fake or not they are not using this response token in the formula. So I've had to decompile the bytecode and reverse engineer the formula myself. It took me so much time so I've decided to not give the formula open-source. You can contact to me if you are interested in V4.
+In the next version of the Unicrypt presale contract they have changed the formula of how they generate the `bytes _key` argument of the `userDeposit` function
+
+Also they have added a hCaptcha protection to prevent bots from contributing. Now the formula is hidden in server side and the only way to get is hack the Unicrypt and see the source codes or decompile the presale contract and find it through the bytecodes. I've decided to do the second way but It really took me so many days the figure out so I've decided to make it close-sourced. You can contact me to learn info.
 
 # Contact And Donation
 All donations are welcomed, Thank you!
